@@ -1,0 +1,6 @@
+rosesacnh.jpg|roses|5€|pink, red, black, white
+hacnh.jpg|hydrangea|8€|purple, red, white, blue
+lilyacnh.jpg|lily|7€|pink, white, red, black
+mumacnh.jpg|mum|10€|green, yellow, red, white
+pansyacnh.jpg|pansy|3.50€|white, blue, orange, purple
+tulipacnh.jpg|tulip|6.50€|red, yellow, black, orange
