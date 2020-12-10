@@ -3,61 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>FLower Shop 2</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='flowercss.css'>
 
-    <style>
-
-    .header{
-        text-align: center;
-        font-size: xx-large;
-        margin-top: 15%;
-    }
-
-    .subheader{
-        text-align: center;
-        font-size: x-large;
-        margin-top: -2%;
-    }
-
-        #ALLProducts{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-            position: absolute;
-            top: 33%;
-            left: 7%;
-            right: 7%;
-
-}
-
-.box{
-    display: inline-block;
-    background-color: indianred;
-    text-align: center;
-    width: 33%;
-    height: 100%;
-   margin-left: 0.1%;
-    margin-right: 0.22%;
-    margin-bottom: 0.22%;
-
-}
-
-.image{
-    height: 150px;
-    width: 150px;
-}
-
-.Name{
-    font-size: medium;
-}
-
-.Price{
-    font-size: small;
-}
-
-.Colour{
-    font-size: x-small;
-}
-    </style>
 </head>
 <body>
 

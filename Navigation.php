@@ -12,6 +12,31 @@
 </head>
 <body>
 
+<?php
+    function AddNavLink($pageLink, $pageText)
+    {
+        $myLinkexploded=explode("/", $_SERVER["REQUEST_URI"]);
+        $sizeOfExplodedLinkArray = sizeof($myLinkexploded);
+
+        if($pageLink==$myLinkexploded[$sizeOfExplodedLinkArray-1])
+        {
+            ?>
+            <a class="activeavLink"><?=$pageText?></a>
+            <?php
+        } 
+        else 
+        {
+            ?>
+            <a href="<?=$pageLink;?>" class="inactiveLink"><?=$pageText?></a>
+            <?php
+        
+        }
+    }
+?>
+
+
+
+
 <div class="nav">
     <?php
     $navigationLinks=["roses.php"=>"Roses", "hydrangea.php"=>"Hydrangea", "lily.php"=>"Lily"];
