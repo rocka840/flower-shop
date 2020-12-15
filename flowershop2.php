@@ -30,7 +30,7 @@ if(isset($_SESSION["username"]) && isset($_SESSION["password"])){
         <input name="password" type="password" placeholder="password here">
         <input type="submit" name="submit">
     </form>
-<?php
+    <?php
 }
 ?>
 
@@ -45,17 +45,17 @@ if(isset($_SESSION["username"]) && isset($_SESSION["password"])){
     {
         $oneProduct = explode("|", $line);
 
-    ?>
+        ?>
 
 
-    <div class="box">
-        <img src="<?=$oneProduct[0]?>" alt="FlowerImg" class="image">
-        <div class="Name">Name:<?=$oneProduct[1]?></div>
-        <div class="Price">Price:<?=$oneProduct[2]?></div>
-        <div class="Colour">Colours Available:<?=$oneProduct[3]?></div>
-    </div>
+        <div class="box">
+            <img src="<?=$oneProduct[0]?>" alt="FlowerImg" class="image">
+            <div class="Name">Name:<?=$oneProduct[1]?></div>
+            <div class="Price">Price:<?=$oneProduct[2]?></div>
+            <div class="Colour">Colours Available:<?=$oneProduct[3]?></div>
+        </div>
 
-    <?php
+        <?php
     }
     fclose($fileHandler);
     ?>

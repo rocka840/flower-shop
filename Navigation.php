@@ -6,32 +6,42 @@
 
     <style>
         .nav{
-    background-color: indianred;
+            background-color: indianred;
+            width:1098px;
+            height: 78px;
+        }
+
+        .activeLink{
+            background-color: gray;
+        }
+
+        .inactiveLink{
+            background-color: indianred;
         }
     </style>
 </head>
 <body>
 
 <?php
-    function AddNavLink($pageLink, $pageText)
-    {
-        $myLinkexploded=explode("/", $_SERVER["REQUEST_URI"]);
-        $sizeOfExplodedLinkArray = sizeof($myLinkexploded);
+function AddNavLink($pageLink, $pageText)
+{
+    $myLinkexploded=explode("/", $_SERVER["REQUEST_URI"]);
+    $sizeOfExplodedLinkArray = sizeof($myLinkexploded);
 
-        if($pageLink==$myLinkexploded[$sizeOfExplodedLinkArray-1])
-        {
-            ?>
-            <a class="activeavLink"><?=$pageText?></a>
-            <?php
-        } 
-        else 
-        {
-            ?>
-            <a href="<?=$pageLink;?>" class="inactiveLink"><?=$pageText?></a>
-            <?php
-        
-        }
+    if($pageLink==$myLinkexploded[$sizeOfExplodedLinkArray-1])
+    {
+        ?>
+        <a class="activeLink"><?=$pageText?></a>
+        <?php
     }
+    else
+    {
+        ?>
+        <a href="<?=$pageLink;?>" class="inactiveLink"><?=$pageText?></a>
+        <?php
+
+    }
+}
 ?>
 
 
@@ -39,11 +49,11 @@
 
 <div class="nav">
     <?php
-    $navigationLinks=["roses.php"=>"Roses", "hydrangea.php"=>"Hydrangea", "lily.php"=>"Lily"];
+    $navigationLinks=["homeflower.php"=>"Home","flowershop2.php"=>"Shop" , "roses.php"=>"Roses", "contactflower.php"=>"Contact"];
     /*
     navigationLinks["roses.php"] -> this will be equal to "Roses"
     */
-   // $sampleArray=["Value1","Value2"];
+    // $sampleArray=["Value1","Value2"];
     /*
      $sampleArray[0] -> this will be equal tp "Value"
      */
